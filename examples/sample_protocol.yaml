@@ -1,0 +1,50 @@
+# Sample tokenomics config for a hypothetical L2 protocol with 1B total supply.
+# Each bucket has: name, allocation_pct, cliff_months, vesting_months, unlock_type.
+# unlock_type: "linear" (vests over vesting_months after cliff),
+#              "cliff" (single unlock at cliff month),
+#              "tge" (released at TGE / month 0).
+
+total_supply: 1000000000
+
+buckets:
+  - name: team
+    allocation_pct: 18
+    cliff_months: 12
+    vesting_months: 36
+    unlock_type: linear
+
+  - name: investors
+    allocation_pct: 22
+    cliff_months: 6
+    vesting_months: 24
+    unlock_type: linear
+
+  - name: treasury
+    allocation_pct: 25
+    cliff_months: 0
+    vesting_months: 48
+    unlock_type: linear
+
+  - name: community_airdrop
+    allocation_pct: 8
+    cliff_months: 0
+    vesting_months: 0
+    unlock_type: tge
+
+  - name: ecosystem_grants
+    allocation_pct: 15
+    cliff_months: 3
+    vesting_months: 36
+    unlock_type: linear
+
+  - name: liquidity
+    allocation_pct: 6
+    cliff_months: 0
+    vesting_months: 0
+    unlock_type: tge
+
+  - name: future_emissions
+    allocation_pct: 6
+    cliff_months: 24
+    vesting_months: 48
+    unlock_type: linear

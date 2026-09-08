@@ -2,7 +2,7 @@
 
 Token emission and unlock schedule simulator for DeFi DD memos.
 
-I built this while writing investment memos at Legends Group. The single most useful pre-investment check is: "what % of total supply unlocks in the first 12 months, and where are the cliff drops?". This script answers that in 5 seconds from a YAML config.
+The single most useful pre-investment check is: "what % of total supply unlocks in the first 12 months, and where are the cliff drops?". This script answers that in 5 seconds from a YAML config.
 
 ## What it does
 
@@ -111,7 +111,7 @@ It does NOT tell you:
 - Whether the treasury is governed responsibly
 - Whether secondary market liquidity can handle the unlock cadence
 
-I cover those layers in my DD memos. This script just shortcuts the math.
+Those layers need a human read. This script just shortcuts the math.
 
 ## Use cases
 
@@ -131,11 +131,3 @@ I cover those layers in my DD memos. This script just shortcuts the math.
 
 MIT.
 
-## Author
-
-Denis Chaplinskii
-- Diligence Council at [Turtle.xyz](https://turtle.xyz)
-- 25+ structured investment memos at Legends Group (Movement Labs, Ether.fi, Saga, Fragmetric, Intuition)
-- LinkedIn: [linkedin.com/in/denis-chaplinskii](https://linkedin.com/in/denis-chaplinskii)
-- X: [@iPooda432](https://x.com/iPooda432)
-- Email: chaplinskiidenis@gmail.com
